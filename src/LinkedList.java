@@ -61,4 +61,18 @@ public class LinkedList {
             System.out.println("List Kosong"); //Maka muncul "List Kosong"
         }
     }
+    
+//    Method untuk menghapus data yang ada di terakhir
+    public void deleteLast(){
+        Node temp = head;
+        if (!isEmpty()) {//Jika tidak kosong
+            while(temp.next.next!=null){//Dilakukan perulangan selama tidak kosong
+                temp=temp.next;//data terakhir masuk ke data yang sebelumnya
+            }
+            temp.next=null;//Maka pointer ke selanjutnya kosong
+        }
+        else{//Jika kosong
+            System.out.println("List kosong");//Maka kosong
+        }
+    }
 }
