@@ -75,4 +75,15 @@ public class LinkedList {
             System.out.println("List kosong");//Maka kosong
         }
     }
+    
+//    Method untuk mencari
+    public String find(int search){
+        Node temp = head;
+        while(temp.data!=search){//Menyamakan data menggunakan looping
+            if (temp.next==null) {//Jika data tidak ada
+                return "Tidak ada";//Maka muncul "Tidak ada"
+            }
+        }
+        return "Ada";//Jika ada maka muncul "Ada"
+    }
 }
