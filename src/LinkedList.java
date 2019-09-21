@@ -86,4 +86,14 @@ public class LinkedList {
         }
         return "Ada";//Jika ada maka muncul "Ada"
     }
+    
+//    Method mengecek kosong
+    public boolean isEmpty(){
+        if (head==null) {//Jika head kosong
+            return true;//Maka true data kosong
+        }
+        else{//Jika head ada
+            return false;//Maka data tidak kosong
+        }
+    }
 }
