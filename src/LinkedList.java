@@ -43,4 +43,22 @@ public class LinkedList {
             temp.next=newNode;//newNode mengisi data ke pointer setelah data terakhir
         }
     }
+    
+//    Method untuk menghapus data yang ada di paling depan
+    public void deleteFirst(){
+        Node temp = head;
+        if (!isEmpty()) {//Jika tidak kosong Maka dicek kemabli
+            if (temp.next==null) {//Jika pointer di head menunjuk ke data kosong
+                head=null;//Maka head itu kosong
+            }
+            else{//Jika Pointer yang menunjuk tidak kosong
+                temp=temp.next;//Maka pointer yang menunjuk ke data kedua
+                               //dimasukkan ke data pertama
+                head=temp;//dan data pertama menjadi head
+            }
+        }
+        else{//Jika kosong
+            System.out.println("List Kosong"); //Maka muncul "List Kosong"
+        }
+    }
 }
