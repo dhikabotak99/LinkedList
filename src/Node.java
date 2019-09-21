@@ -12,4 +12,9 @@ public class Node {
 //    Deklarasi Variabel
     public int data; //Data dengan tipe data integer
     public Node next; //Pointer
+    
+//    Constructor
+    public Node(int data){
+        this.data=data;
+    }
 }
